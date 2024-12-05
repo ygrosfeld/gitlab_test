@@ -1,21 +1,25 @@
+list1 = [1, 100, False, 10, 20]
+del list1[2]
 
-happy_smiles = []
+print(list1)
 
-happy_smiles.append('😊')
-happy_smiles.append('😁')
-happy_smiles.append('😉')
-happy_smiles.append('😜')
+print(len(list1))
 
-print(happy_smiles)
+list1.sort(reverse=True)
 
-print(len(happy_smiles))
+print(list1)
+
+list2 = ['abc', 3]
+
+list3 = list1 + list2
+
+list1.extend(list2)
+
+print(list1)
+print(list3)
 
 
-
-
-
-
-
-
+list1.__add__(list2[:1])
+print(list1)
 
 
